@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winter's Night</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="images/sword-icon.png" type="image/x-icon">
+        <script language="Javascript" type="text/javascript" src="java.js"></script>
+    </head>
+    <body style="overflow: hidden;">
+        <div class="head">
+            <a href="#main" alt="Skip to Main Content"></a>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/sword-logo.png" height="100%" alt="Logo - Flaming Sword"><img id="titlelogo" src="images/logo-border.png" height="100%" alt="Title - Winter's Night">
+                </a>
+            </div>
+            <a href="preorder.html">
+                <div class="navitemactive">
+                    <h1>Pre-Order</h1>
+                </div>
+            </a>
+            <a href="updates.html">
+                <div class="navitem">
+                    <h1>Updates</h1>
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="navitem">
+                    <h1>About</h1>
+                </div>
+            </a>
+            <div class="hamburger">
+                <div class="dropdown">
+                    <img src="images/hamburger.png" height="100%" align="right" onclick="myFunction()" class="dropbtn">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="preorderform.html">Pre-Order</a>
+                        <a href="updates.html">Updates</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preorderform">
+            <h1>Pre-Order</h1>
+            <form id="form">
+                <table class="form">
+                    <tr>
+                        <th>Personal Info</th>
+                        <th>Credit Card Info</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Name" id="name"></td>
+                        <td><input type="text" placeholder="Card Number" id="cardnum" maxlength="19" onkeyup="formatCreditCardOnKey(event)" onblur="formatCreditCard()" onfocus="formatCreditCard()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Email" id="email"></td>
+                        <td><select id="month">
+                            <option value="null">Month</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <select id="year">
+                            <option value="null">Year</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><select id="country" onchange="countrySelect(this.options[this.selectedIndex].value)">
+                            <option value="null">Country</option>
+                            <option value="ca">Canada</option>
+                            <option value="us">United States</option>
+                        </select></td>
+                        <td><input type="password" placeholder="CCV" id="ccv" maxlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td><select id="stprov">
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="City" id="city"></td>
+                    </tr>
+                    <tr>
+                        <td class="cancel" onclick="clearDisp()">Cancel</td>
+                        <td class="confirm" onclick="confirm()">Confirm</td>
+                    </tr>
+                </table>
+            </form>
+            <h3>Due For Release Late 2023</h3>
+        </div>
+        <div class="footer"><small><em>&copy 2022 Ravenworks Ltd.</em> All images are licensed under Creative Commons</small>&nbsp;&nbsp;&nbsp;</div>
+    </body>
+</html>
