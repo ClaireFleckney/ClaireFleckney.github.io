@@ -2627,12 +2627,6 @@ input, select, textarea {
 			border-radius: 0 0 .5em .5em;
 		}
 
-		/* .file.right figcaption {
-			font-size: smaller;
-			float: right;
-			margin-right: 1em;
-		} */
-
 	.file.left {
 		float: left;
 		margin: 0 2.5em 2em 0;
@@ -2715,6 +2709,8 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
+			min-height: 39em;
+			max-height: fit-content;
 		}
 
 			.image.main img {
@@ -2790,6 +2786,23 @@ input, select, textarea {
 				ul.alt li:first-child {
 					border-top: 0;
 					padding-top: 0;
+				}
+
+		ul.icon-links {
+			display: inline-block;
+		}
+
+			ul.icon-links li {
+				display: inline-block;
+				margin-right: 2em;
+			}
+
+				ul.icon-links li a {
+					opacity: .5;
+				}
+
+				ul.icon-links li a:hover {
+					opacity: 1;
 				}
 
 	dl {
@@ -3532,7 +3545,6 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			text-align: right;
-			/* height: max-content; */
 		}
 
 			#header > nav > ul {
