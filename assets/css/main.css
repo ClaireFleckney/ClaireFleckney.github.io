@@ -2599,6 +2599,20 @@ input, select, textarea {
 		max-height: 95%;
 	}
 
+	.prev.image.left, .prev.image.right {
+		display: none;
+	}
+
+		@media screen and (max-width: 480px) {
+			.file.left, .file.right {
+				display: none;
+			}
+
+			.prev.image.left, .prev.image.right {
+				display: block;
+			}
+		}
+
 		.file.left iframe, .file.right iframe {
 			width: 100%;
 			height: 100%;
@@ -2656,6 +2670,12 @@ input, select, textarea {
 		height: fit-content;
 		min-height: 33em;
 	}
+
+		@media screen and (max-width: 480px) {
+			.file.main {
+				min-height: max-content;
+			}
+		}
 
 		.file.main iframe {
 			width: 100%;
@@ -3623,7 +3643,8 @@ input, select, textarea {
 				}
 
 					#header > nav > ul > li {
-						margin-left: 1.5em;
+						margin-left: 1em;
+						font-size: .75em;
 					}
 
 						#header > nav > ul > li a {
