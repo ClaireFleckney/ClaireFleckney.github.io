@@ -2480,6 +2480,14 @@ input, select, textarea {
 		border-radius: 100%;
 	}
 
+	#g-recaptcha-response {
+		display: block !important;
+		position: absolute;
+		margin: -50px 0 0 0 !important;
+		z-index: -999999;
+		opacity: 0;
+	}
+
 	::-webkit-input-placeholder {
 		color: rgba(255, 255, 255, 0.35) !important;
 		opacity: 1.0;

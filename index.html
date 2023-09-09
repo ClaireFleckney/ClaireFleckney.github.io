@@ -140,8 +140,12 @@
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<!-- <input type="text" name="email" id="email" /> -->
 												<input type="email" name="email" />
+											</div>
+											<div class="field">
+												<label for="subject">Subject</label>
+												<input type="text" name="topic" />
+												<input type="hidden" name="subject" value="Reply to {{ topic }}" />	
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -149,8 +153,8 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<!-- <li><a href="" class="button submit">Send Message</a></li> -->
 											<li><input type="submit" class="button submit" value="Send Message"></li>
+											<li><div class="g-recaptcha" data-sitekey="6LddvA8oAAAAAEBjxeo5drMnPvYrI2qdkxeW1zCx"></div></li>
 										</ul>
 									</form>
 								</section>
@@ -194,6 +198,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 	</body>
 </html>

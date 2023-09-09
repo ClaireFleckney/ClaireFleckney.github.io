@@ -44,6 +44,21 @@
 
 			});
 
+		// Clear Form after submission
+			window.onbeforeunload = () => {
+				for(const form of document.getElementsByTagName('form')) {
+					form.reset();
+				}
+			}
+
+		// Require reCAPTCHA
+			window.onload = function() {
+				var el = document.getElementById('g-recaptcha-response');
+				if (el) {
+					el.setAttribute('required', 'required');
+				}
+			}
+
 	// Sidebar.
 		if ($sidebar.length > 0) {
 
