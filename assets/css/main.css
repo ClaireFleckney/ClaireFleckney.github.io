@@ -3562,10 +3562,16 @@ input, select, textarea {
 		#header > .title {
 			border: 0;
 			color: #ffffff;
-			display: block;
+			display: flex;
 			font-size: 1.25em;
 			font-weight: bold;
+			vertical-align: -webkit-baseline-middle;
 		}
+
+			#header > .title > .logo {
+				height: 1.7em;
+				margin-right: .5em;
+			}
 
 		#header > nav {
 			-moz-flex: 1;
