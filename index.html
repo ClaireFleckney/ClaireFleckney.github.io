@@ -130,6 +130,15 @@
 					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
+							<div class="popup" id="popup">
+								<a class="button icon solid fa-calendar-alt" onclick="popFunction()">Book a Free Meeting Now</a>
+								<span class="popuptext" id="myPopup">
+									<div class="tidycal-embed" data-path="clairefleckney"></div>
+								</span>
+							</div>
+							<div class="popup" id="calButton">
+								<a class="button icon solid fa-calendar-alt" href="https://tidycal.com/clairefleckney" target="_blank">Book a Free Meeting Now</a>
+							</div>
 							<p>Please feel free to email me or contact me on any of my listed profiles. I will do my best to reply within one business day.</p>
 							<div class="split style1">
 								<section>
@@ -161,16 +170,6 @@
 								</section>
 								<section>
 									<ul class="contact">
-										<li>
-											<link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
-											<script src="https://calendly.com/assets/external/widget.js" type="text/javascript">
-												Calendly.initPopupWidget({
-													"url": 'https://calendly.com/claire-fleckney',
-													"parentElement": document.getElementById('calendly-popup-widget'),
-												});
-											</script>
-											<a class="button icon solid fa-calendar-alt" id="calendly-popup-widget" onclick="Calendly.showPopupWidget('https://calendly.com/claire-fleckney');return false;">Book a Free Meeting Now</a>
-										</li>
 										<li>
 											<h3>Email</h3>
 											<a href="mailto:contact@claire-fleckney.com">contact@claire-fleckney.com</a>
@@ -253,6 +252,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			<script src="https://assets.tidycal.com/js/embed.js" async></script>
 
 
 
