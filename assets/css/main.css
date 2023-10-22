@@ -2537,34 +2537,6 @@ input, select, textarea {
 		margin-bottom: 1em;
 	}
 
-	.popup .popuptext {
-		display: none;
-		width: 100%;
-		position: absolute;
-		left: 0;
-		z-index: 1;
-		margin-top: 1em;
-	}
-
-	.popup .show {
-		display: block;
-	}
-
-	#calButton.popup {
-		display: none;
-	}
-
-		@media screen and (max-width: 736px) {
-
-			#calButton.popup {
-				display: block;
-			}
-
-			#popup.popup {
-				display: none;
-			}
-		}
-
 /* #endregion */
 
 /* Icon */

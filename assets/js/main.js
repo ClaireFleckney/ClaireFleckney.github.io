@@ -59,12 +59,6 @@
 				}
 			}
 
-		// TidyCal Popup
-			popFunction = () => {
-				var popup = document.getElementById("myPopup");
-				popup.classList.toggle("show");
-			}
-
 	// Sidebar.
 		if ($sidebar.length > 0) {
 
