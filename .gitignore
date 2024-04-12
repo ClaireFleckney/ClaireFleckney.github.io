@@ -1,5 +1,5 @@
 elements.html
 generic.html
-*.csv
+# *.csv
 *.tsv
 sizes.txt
